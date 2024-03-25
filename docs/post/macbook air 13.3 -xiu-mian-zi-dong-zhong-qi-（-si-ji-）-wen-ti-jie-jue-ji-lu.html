@@ -12,8 +12,9 @@
         else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
     </script>
     
-<meta name="description" content="cham的个人小屋">
-<title>CYBERIA cafe&club</title>
+<meta name="description" content="macbook air 13.3 休眠自动重启（死机）问题解决记录">
+<title>macbook air 13.3 休眠自动重启（死机）问题解决记录</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 </head>
 <style>
@@ -24,81 +25,77 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </style>
 
 <style>
-.avatar {transition: 0.8s;width:64px;height:64px;object-fit: cover;}
-.avatar:hover{transform: scale(1.15) rotate(360deg);}
-#header h1 a{color:inherit;text-decoration:none;vertical-align: bottom;font-size:40px;font-family:Monaco;margin-left:8px;}
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
 .title-right{display:flex;margin:auto 0 0 auto;}
-.title-right button{margin-right:8px;padding:16px;}
-.title-right .circle{padding: 14px 16px;}
-
-.SideNav{min-width: 360px;}
-.SideNav-icon{margin-right: 16px}
-.SideNav-item .Label{color: #fff;margin-left:8px;}
-.d-flex{min-width:0;}
-.listTitle{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;max-width: 100%;}
-.listLabels{white-space:nowrap;}
-.listLabels object{max-height:16px;max-width:24px;}
-
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
 @media (max-width: 600px) {
     body {padding: 8px;}
-    .avatar {width:40px;height:40px;}
-    .blogTitle{display:none;}
-    #buttonRSS{display:none;}
-    .LabelTime{display:none;}
+    .postTitle{font-size:24px;}
 }
 </style>
 
 
+
+
 <body>
     <div id="header">
-<h1>
-    <img src="https://img2.imgtp.com/2024/03/24/qqsfaGIf.svg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">CYBERIA cafe&club</a></h1>
+<h1 class="postTitle">macbook air 13.3 休眠自动重启（死机）问题解决记录</h1>
 <div class="title-right">
-    <a href="https://Chamstin.github.io/chamstin.github.io/tag.html"><button id="buttonSearch" class="btn btn-invisible circle" title="搜索">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathSearch" fill-rule="evenodd"></path>
+    
+    <a href="https://Chamstin.github.io/chamstin.github.io"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path>
+        </svg>
+    </button></a>
+
+    
+    <a href="https://github.com/Chamstin/chamstin.github.io/issues/3" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
         </svg>
     </button></a>
     
-    <a href="https://Chamstin.github.io/chamstin.github.io/rss.xml" target="_blank"><button id="buttonRSS" class="btn btn-invisible circle" title="RSS">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathRSS" fill-rule="evenodd"></path>
-        </svg>
-    </button></a>
-    <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
     </button>
+
 </div>
 </div>
     <div id="content">
-<div style="margin-bottom: 16px;">cham的个人小屋</div>
-<nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/macbook%20air%2013.3%20-xiu-mian-zi-dong-zhong-qi-%EF%BC%88-si-ji-%EF%BC%89-wen-ti-jie-jue-ji-lu.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">macbook air 13.3 休眠自动重启（死机）问题解决记录</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#bfd4f2"><object><a style="color:#fff" href="https://Chamstin.github.io/chamstin.github.io/tag.html#问题记录">问题记录</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-03-25</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/di-yi-pian-ge-ren-bo-ke-ce-shi.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">第一篇个人博客测试</span>
-    </div>
-    <div class="listLabels">
-        <span class="Label" style="background-color:#006b75">1</span>
-        <span class="Label LabelName" style="background-color:#00E04E"><object><a style="color:#fff" href="https://Chamstin.github.io/chamstin.github.io/tag.html#编程相关">编程相关</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-03-24</span>
-    </div>
-</a>
-</nav>
+<div class="markdown-body" id="postBody"><h1>macbook air 13.3 休眠自动重启（死机）问题解决记录</h1>
+<p>问题描述：</p>
+<p>​	收的二手的mac在确认检查无误后，正常使用发现有莫名奇妙睡眠重启的问题，表现为盒盖睡眠之后再马上打开会死机重启，手动睡眠之后马上按键会进行重启，盒盖睡眠之后若是连接上了其他设备比如蓝牙鼠标此时点按蓝牙鼠标会进行卡死重启。</p>
+<p>问题日志，大多一样：</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">panic(cpu 3 <span class="pl-c1">caller</span> 0xfffffe0030541a9c): DCP PANIC - ASSERT<span class="pl-k">!</span>AppleDCPDPTXPowerController.cpp:538 No device added after powering on the rails. HPD=0 - dcpav(27)
+ASSERT<span class="pl-k">!</span>AppleDCPDPTXPowerController.cpp:538 No device added after powering on the rails. HPD=0
+RTKit: RTKit-2419.101.1.release - Client: local-ipad14dcp.RELEASE
+<span class="pl-k">!</span>UUID: fe6311b8-1432-3071-bdc3-8a18a91b68a4
+Time: 0x0000000291465c54</pre></div>
+<h2>解决方案</h2>
+<p>进行硬件检查，没有发现问题，重装不行，可能是mac设计缺陷</p>
+<p>解决方案：</p>
+<p>​	配置脚本禁止蓝牙唤醒或者睡眠关闭蓝牙：</p>
+<h3>1 使用**[<a href="https://github.com/dreamncn/SleepWithoutBluetoothAndWifi">SleepWithoutBluetoothAndWifi</a>](<a href="https://github.com/dreamncn/SleepWithoutBluetoothAndWifi)**%E9%A1%B9%E7%9B%AE">https://github.com/dreamncn/SleepWithoutBluetoothAndWifi)**项目</a></h3>
+<p>能关闭lwifi但是休眠时蓝牙唤醒仍旧存在，导致盒盖情况下点击鼠标会进行死机重启，未起作用</p>
+<h3>2 使用自动关闭蓝牙项目**[<a href="https://github.com/odlp/bluesnooze">bluesnooze</a>](<a href="https://github.com/odlp/bluesnooze">https://github.com/odlp/bluesnooze</a>)**</h3>
+<p>能够起作用，在点击睡眠之后确实睡眠了，并且蓝牙断开，点击鼠标无法唤醒，但是同时apple watch的自动解锁无法使用，必须重新登录才能开启蓝牙，此方案可以给没有apple watch自动解锁需求者使用</p>
+<h3>3 使用关闭休眠模式</h3>
+<div class="highlight highlight-source-shell"><pre class="notranslate">sudo pmset -c hibernatemode 0
+sudo pmset -b hibernatemode 3 </pre></div>
+<p>上述设置在不盒盖的时候点按能够唤醒mac，并且没有出错</p>
+<h2>可能的原因</h2>
+<p>根据网络上存在的维修记录和解决方案，其中有效的是去天才吧更换屏幕和角度传感器，可能是上述部分导致了某些设备离线？不能启动，但是在屏幕打开的时候可以正常唤醒。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://Chamstin.github.io/chamstin.github.io"> CYBERIA cafe&club </a>
 <p>
@@ -151,19 +148,45 @@ console.log("\n %c Gmeek last %c https://github.com/Meekdai/Gmeek \n\n", "color:
 </script>
 
 <script>
-document.getElementById("pathSearch").setAttribute("d",IconList["search"]);
-document.getElementById("pathRSS").setAttribute("d",IconList["rss"]);
-iconTOP=document.getElementsByClassName("svgTop1");
-iconPost=document.getElementsByClassName("svgTop0");
-for(var i=0;i<iconTOP.length;i++){
-    iconTOP[i].setAttribute("d",IconList["upload"]);
-    iconTOP[i].parentNode.style.color="red";
-}
-for(var i=0;i<iconPost.length;i++){
-    iconPost[i].setAttribute("d",IconList["post"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Chamstin/chamstin.github.io");
+    script.setAttribute("issue-term","title");
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else{script.setAttribute("theme","github-light");}
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
 }
 
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
 
 </script>
+
+
+
 
 </html>
