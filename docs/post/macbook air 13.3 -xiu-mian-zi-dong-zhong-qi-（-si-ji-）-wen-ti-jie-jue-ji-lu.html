@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://img2.imgtp.com/2024/03/24/qqsfaGIf.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -102,8 +102,10 @@ sudo pmset -b hibernatemode 3 </pre></div>
 <h2>可能的原因</h2>
 <p>根据网络上存在的维修记录和解决方案，其中有效的是去天才吧更换屏幕和角度传感器，可能是上述部分导致了某些设备离线？不能启动，但是在屏幕打开的时候可以正常唤醒。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://chamstin.github.io"> CYBERIA cafe&club </a>
 <p>
@@ -163,6 +165,8 @@ cmButton=document.getElementById("cmButton");
     span.setAttribute("class","Counter");
     span.innerHTML="1";
     cmButton.appendChild(span);
+
+
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
