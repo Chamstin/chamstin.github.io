@@ -7,7 +7,7 @@ hero:
   text: Welcome to CYBERIA。
   tagline: 欢迎来到Lain#cham的个人博客. <br>「どこにいたって、人は繋がっているのよ」.
   image:
-    src: ../public/cyberia.JPG
+    src: /cyberia.JPG
     alt: CYBERIA
   actions:
     - theme: brand
