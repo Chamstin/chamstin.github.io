@@ -3,7 +3,7 @@ layout: home
 class: 'custom-home'
 
 hero:
-  name: 岩倉玲音の小屋
+  name: 玲音の部屋
   text: Welcome to CYBERIA。
   tagline: 欢迎来到Lain#cham的个人博客. <br>「どこにいたって、人は繋がっているのよ」.
   image:
