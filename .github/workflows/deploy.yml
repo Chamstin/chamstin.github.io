@@ -1,0 +1,4 @@
+# 创建文件夹
+mkdir .github/workflows/
+# 创建deploy.yml文件
+echo "" > .github/workflows/deploy.yml
