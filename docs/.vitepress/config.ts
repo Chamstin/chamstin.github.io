@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
    base: '/cyberia/',
-  title: '岩倉玲音の小屋',
+  title: '玲音の部屋',
   description: 'Welcome to CYBERIA.',
 
   themeConfig: {
