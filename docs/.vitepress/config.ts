@@ -29,6 +29,7 @@ export default defineConfig({
         // text: 'Guide',
         items: [
           { text: 'Example', link: '/example' },
+          {text:'Embodied-RAG-Reading', link:'/Embodied-RAG-Reading.md'}
           // ...
         ],
       },
