@@ -29,7 +29,8 @@ export default defineConfig({
         // text: 'Guide',
         items: [
           { text: 'Example', link: '/example' },
-          {text:'Embodied-RAG-Reading', link:'/Embodied-RAG-Reading.md'}
+          {text:'Embodied-RAG-Reading', link:'/Embodied-RAG-Reading.md'},
+          {text:'Vision-and-language Navigation Survey', link:'/Vision-and-language_Navigation_Survey.md'}
           // ...
         ],
       },
