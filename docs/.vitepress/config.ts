@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'en-US',
-   base: '/cyberia/',
+   base: '/',
   title: '玲音の部屋',
   description: 'Welcome to CYBERIA.',
 
